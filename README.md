@@ -1,1 +1,1 @@
-Проект «Оно тебе надо»
+https://github.com/vegitobluefan/ono-tebe-nado-fd.git

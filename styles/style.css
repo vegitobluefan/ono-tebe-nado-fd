@@ -1,8 +1,8 @@
 /* Убираем подчёркивание у активной ссылки */
 
-.header__link_active .header__link,
-.footer__menu-link_active .footer__menu-link {
-	text-decoration: none;
+.header__link_active,
+.footer__menu-link_active {
+  text-decoration: none;
 }
 
 /* overlay, используемый в нескольких блоках */
@@ -18,7 +18,7 @@
 /* Блок header */
 
 .header {
-	display: grid;
+  display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 92px 50px 95px;
@@ -30,7 +30,7 @@
 }
 
 .header__links-list {
-	display: flex;
+  display: flex;
   gap: 32px;
   list-style: circle;
 }
@@ -45,7 +45,7 @@
 }
 
 .header__logo {
-	display: block;
+  display: block;
   width: 148px;
   height: 105px;
 }
@@ -65,11 +65,11 @@
   justify-self: end;
 }
 
- /* Блок cover */
+/* Блок cover */
 
 .cover {
   position: relative;
-  background-image: url(../images/cover.jpg);
+  background: url(../images/cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -107,7 +107,7 @@
 }
 
 .cover__description {
-  padding-top: 126px;  
+  padding-top: 126px;
   position: relative;
   z-index: 2;
   display: flex;
@@ -138,27 +138,27 @@
 
 .lots {
   margin-top: 180px;
-	padding: 0 24px;
+  padding: 0 24px;
 }
 
 .lots__heading {
   padding: 0 0 27px 40px;
-	font-weight: 700;
-	font-size: 40px;
-	text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
 }
 
 .lots__card-list {
   display: flex;
-	flex-wrap: wrap;
-	gap: 25px;
-	padding-bottom: 30px;
-	list-style: none;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-bottom: 30px;
+  list-style: none;
 }
 
 .lots__card-list-item {
-	width: 334px;
-	height: 596px;
+  width: 334px;
+  min-height: 596px;
 }
 
 .card-link {
@@ -167,35 +167,31 @@
 }
 
 .card {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 100%;
-	padding: 48px 40px;
-	color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 48px 40px;
+  color: #fff;
 }
 
 .card__title {
   font-weight: 700;
-	font-size: 22px;
-	text-underline-position: under;
+  font-size: 22px;
+  text-underline-position: under;
   text-decoration-line: underline;
-	text-transform: uppercase;
+  text-transform: uppercase;
   z-index: 2;
 }
 
 .card__text {
   font-size: 20px;
-	line-height: 24px;
+  line-height: 24px;
   z-index: 2;
-}
-
-.card_type_film,
-.card_type_book,
-.card_type_picture {
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_film {
@@ -211,8 +207,8 @@
 }
 
 .lots__look-more-link {
-	margin-left: 40px;
-	font-size: 20px;
+  margin-left: 40px;
+  font-size: 20px;
   text-underline-position: under;
   text-decoration-line: underline;
 }
@@ -222,20 +218,20 @@
 .about {
   display: grid;
   grid-template-columns: min-content 1fr;
-	column-gap: 72px;
-	margin-top: 120px;
-	padding-right: 29px;
-	padding-left: 71px;
+  column-gap: 72px;
+  margin-top: 120px;
+  padding-right: 29px;
+  padding-left: 71px;
 }
 
 .about__logo {
   display: flex;
-	justify-content: center;
-	min-width: 240px;
-	height: 240px;
-	margin-top: 2px;
-	border-radius: 100%;
-	background-color: black;
+  justify-content: center;
+  min-width: 240px;
+  height: 240px;
+  margin-top: 2px;
+  border-radius: 100%;
+  background-color: black;
 }
 
 .about__logo-image {
@@ -266,17 +262,17 @@
 .footer {
   display: grid;
   grid-template: min-content / repeat(3, 1fr);
-	column-gap: 160px;
-	margin: 180px 0 88px;
+  column-gap: 160px;
+  margin: 180px 0 88px;
 }
 
 .footer__menu-list {
   display: flex;
-	flex-direction: column;
+  flex-direction: column;
   align-items: center;
-	min-width: 264.57px;
-	padding-left: 50px;
-	list-style: none;
+  min-width: 264.57px;
+  padding-left: 50px;
+  list-style: none;
   text-underline-offset: 1px;
 }
 
@@ -288,9 +284,9 @@
 
 .footer__social-list {
   display: flex;
-	justify-content: space-between;
-	column-gap: 48px;
-	list-style: none;
+  justify-content: space-between;
+  column-gap: 48px;
+  list-style: none;
 }
 
 .footer__social-list-item,

@@ -1,10 +1,3 @@
-/* Убираем подчёркивание у активной ссылки */
-
-.header__link_active,
-.footer__menu-link_active {
-  text-decoration: none;
-}
-
 /* overlay, используемый в нескольких блоках */
 
 .overlay {
@@ -38,6 +31,12 @@
 .header__link {
   font-size: 18px;
   font-weight: 400;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.header__link_active {
+  text-decoration: none;
 }
 
 .header__links-list-item-no-bullit {
@@ -226,7 +225,7 @@
   display: grid;
   grid-template-columns: min-content 1fr;
   column-gap: 72px;
-  margin-top: 120px;
+  padding-top: 152px;
   padding-right: 29px;
   padding-left: 71px;
 }
@@ -236,7 +235,6 @@
   justify-content: center;
   min-width: 240px;
   height: 240px;
-  margin-top: 2px;
   border-radius: 100%;
   background-color: black;
 }
@@ -269,35 +267,38 @@
 .footer {
   display: grid;
   grid-template: min-content / repeat(3, 1fr);
-  column-gap: 160px;
-  margin: 180px 0 88px;
+  column-gap: 140px;
+  padding: 180px 50px 80px;
 }
 
 .footer__menu-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-width: 264.57px;
-  padding-left: 50px;
+  text-align: center;
   list-style: none;
-  text-underline-offset: 1px;
 }
 
 .footer__menu-link {
   font-size: 18px;
   font-weight: 400;
-  line-height: 24.3px;
+  line-height: 21.13px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
 }
 
 .footer__social-list {
   display: flex;
   justify-content: space-between;
+  width: 240px;
   column-gap: 48px;
   list-style: none;
 }
 
 .footer__social-list-item,
 .footer__social-icon {
-  min-height: 48px;
-  min-width: 48px;
+  height: 48px;
 }

@@ -46,8 +46,8 @@
 
 .header__logo {
   display: block;
-  width: 148px;
-  height: 105px;
+  width: 135px;
+  height: 109px;
 }
 
 .header__logo-image {
@@ -62,7 +62,7 @@
 }
 
 .header__address {
-  justify-self: end;
+  padding-left: 191px;
 }
 
 /* Блок cover */
@@ -100,14 +100,21 @@
 
 .aligned-text_center {
   text-align: center;
+  padding-top: 20px;
+  padding-left: 28px;
 }
 
 .aligned-text_right {
   text-align: right;
+  padding-top: 20px;
+}
+
+.no_letter_spacing {
+  letter-spacing: normal;
 }
 
 .cover__description {
-  padding-top: 126px;
+  padding-top: 106px;
   position: relative;
   z-index: 2;
   display: flex;
@@ -118,9 +125,9 @@
 .cover__description-text {
   color: #fff;
   text-transform: uppercase;
+  line-height: 51px;
   font-size: 22px;
-  font-weight: 400;
-  word-spacing: 18px;
+  word-spacing: 18.5px;
 }
 
 .bet-button {
